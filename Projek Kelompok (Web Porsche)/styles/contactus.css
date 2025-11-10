@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 20px;
+  color: #fff;
+  position: sticky; top: 0;
+  backdrop-filter: blur(45px);
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 88px;
+  height: auto;
+  cursor: pointer;
+}
+
+.hamburger {
+  margin-top: 5px;
+  width: 10px;
+  height: 50px;
+  background: black;
+  border-radius: 20% / 90%;
+  transition: 1s;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: #aeaeae;
+  text-decoration: none;
+}
+
+ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 5px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  color: #ffffff;
+}
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 60px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.contact-form p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+}
+
+.contact-form button {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #222;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-image {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay-text {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-section {
+  max-width: 45%;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.btn-contacts {
+  position: relative;
+  width: 300px;
+  font-size: 15px;
+  line-height: 25px;
+  background:#fff;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-contacts:hover {
+  background: rgba(255, 255, 255, 0.701);
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  background: #fff;
+  margin-right: 15px;
+  border: 2px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  background: rgba(255, 255, 255, 0.701);
+  transition: color 0.4s ease-in-out;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid #555;
+  margin: 20px 0;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.porsche-logo {
+  margin-top: 10px;
+  width: 150px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .navbar ul {
+    display: flex; /* Keep navbar on tablet */
+  }
+
+  .contact-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .contact-form {
+    padding: 40px 20px;
+  }
+
+  .contact-form h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-image {
+    height: 300px;
+  }
+
+  .image-overlay-text {
+    font-size: 1.8rem;
+    top: 20px;
+    right: 20px;
+  }
+
+  footer {
+    padding: 20px;
+    height: auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+
+  .btn-contacts {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .social-icons img {
+    margin-right: 10px;
+  }
+
+  .porsche-logo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 30px 15px;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-image {
+    height: 250px;
+  }
+
+  .image-overlay-text {
+    font-size: 1.5rem;
+    top: 15px;
+    right: 15px;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+  }
+
+  .footer-section p {
+    font-size: 14px;
+  }
+}

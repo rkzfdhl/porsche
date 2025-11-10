@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Porsche</title>
+    <link rel="stylesheet" href="styles/about.css">
+    <link
+      rel="icon"
+      href="images/porsche_logo-removebg-preview.png"
+      type="image/icon"
+    />
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <a  href="home.html" class="logo">
+          <img src="images/porsche-logo-1994-full-640.webp" alt="Logo Porsche" />
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="about.html">About Porsche</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hero class="banner">
+      <img src="images/classic porsche in le mans.jpg" alt="Porsche - Le Mans">
+      <h2 class="judul">The Legacy of Porsche</h2>
+      <p class="penjelas">From the first 356 to the modern 911</p>
+      <p class="penjelas2">Every Porsche carries the spirit of racing</p>
+      <button id="btn" onclick="scrollToTimeline()">Discover The Story</button>
+    </hero>
+
+    <script>
+      function scrollToTimeline() {
+        const timelineSection = document.getElementById('timeline');
+        timelineSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
+
+    <section id="timeline" class="timeline-section">
+    <div class="container">
+      <h2 class="section-title">A Short History</h2>
+      <p class="section-sub">Milestones that shaped Porsche’s racing heritage.</p>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="year">1948</div>
+          <div class="timeline-body">
+            <img src="images/porsche 356.jpg" alt="Porsche 356">
+            <h3>The Beginning — 356</h3>
+            <p>Ferdinand Porsche’s first production sports car establishes lightweight design and handling as core Porsche values.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="year">1970s</div>
+          <div class="timeline-body">
+            <img src="images/porsche 917 le mans.jpg" alt="Porsche 917">
+            <h3>Racing Dominance — 917</h3>
+            <p>Porsche cements endurance racing legacy with class-defining wins at 24 Hours of Le Mans and international endurance racing.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="year">1990s–2000s</div>
+          <div class="timeline-body">
+            <img src="images/porsche_gt3.jpg" alt="Porsche GT3">
+            <h3>Track Performance — GT Line</h3>
+            <p>Development of GT and Cup cars delivers race-bred technology to production models and customer sport programs.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="year">2019–2025</div>
+          <div class="timeline-body">
+            <img src="images/porsche taycan.jpg" alt="Porsche Taycan">
+            <h3>Electrification & Innovation</h3>
+            <p>Electric performance and hybrid racing tech bring new chapters to Porsche’s performance story.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAMPIONSHIPS / GALLERY -->
+  <section class="champ-gallery">
+    <div class="container">
+      <h2 class="section-title">Championships & Achievements</h2>
+
+      <div class="champ-grid">
+        <div class="champ-card">
+          <div class="champ-number">24</div>
+          <h4>Le Mans Wins</h4>
+          <p>Historic success at one of motorsport’s most demanding races.</p>
+        </div>
+
+        <div class="champ-card">
+          <div class="champ-number">—</div>
+          <h4>IMSA / WEC Titles</h4>
+          <p>Multiple class and manufacturer championships across endurance series.</p>
+        </div>
+
+        <div class="champ-card">
+          <div class="champ-number">GT</div>
+          <h4>GT & Customer Racing</h4>
+          <p>Worldwide GT championships and the Porsche Carrera Cup platform.</p>
+        </div>
+
+        <div class="champ-card">
+          <div class="champ-number">—</div>
+          <h4>Technological Milestones</h4>
+          <p>Breakthroughs in aerodynamics, hybrid systems and lightweight engineering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / HIGHLIGHT -->
+  <section class="quote-section">
+    <div class="container quote-inner">
+      <blockquote>
+        “We build cars that people dream about.”<span class="cite"> — Ferry Porsche</span>
+      </blockquote>
+    </div>
+  </section>
+    <!-- footer -->
+     <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="contacts">Contacts</h3>
+          <p class="dyhaq">Do you have any questions?</p>
+          <a href="contact.html">
+            <button class="btn-contacts">Get in touch</button>
+          </a>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="socmed">Social Media</h3>
+          <p class="gitwuvsm">Get in touch with us via social media</p>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/porsche/?_rdc=1&_rdr#">
+              <img class="facebook" src="images/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/porsche/">
+              <img class="instagram" src="images/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.youtube.com/porsche">
+              <img class="youtube" src="images/youtube.png" alt="Youtube" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr />
+        <p>© 2025 Porsche Cars Indonesia, Inc.</p>
+        <img class="porsche-logo" src="images/porsche-logo-1994-full-640.webp" alt="Porsche Logo" />
+      </div>
+     </footer>
+</body>
+</html>
